@@ -1,0 +1,18 @@
+Package: RxpsG
+Type: Package
+Title: Processing Tool for X-ray Photoelectron Spectroscopy Data
+Version: 2.3
+Date: 30-07-2020
+Author: Giorgio Speranza & Roberto Canteri
+Maintainer: Giorgio Speranza <speranza@fbk.eu>
+Depends: R (>= 3.0.2), digest, grid, latticeExtra,  
+         methods, SparseM, gWidgets2 (>= 1.0-7), gWidgets2tcltk  
+Imports: tcltk, tkrplot, minpack.lm, baseline (>= 1.2), limSolve, FME, NORMT3, signal, wavelets        
+Description: Implements XPSCoreLine and XPSSample classes and methods for reading analyzing and visualizing XPS spectra files.
+Suggests: R.rsp
+License: GNU General Public License Version 2
+Repository: CRAN
+NeedsCompilation: no
+Archs: i386, x64
+Encoding: UTF-8
+RoxygenNote: 7.1.0

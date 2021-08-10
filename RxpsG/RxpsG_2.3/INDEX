@@ -1,0 +1,178 @@
+AsymmGauss              AsymmGauss function Tail modified Gauss by an
+                        exponential function
+AsymmGaussLorentz       AsymmGaussLorentz function Tail modified
+                        Gauss-Lorentz Sum modifed by using an
+                        exponential function
+AsymmGaussLorentzProd   AsymmGaussLorentzProd function Asym Gaussian
+                        Lorentz cross product from UNIFIT Publication
+AsymmGaussVoigt         AsymmGaussVoigt: see CasaXPS
+AsymmVoigt              AsymmVoigt:
+DoniachSunjic           DoniachSunjic function Correct version of the
+                        Doniach-Sunjic function (see Wertheim PRB
+                        25(3), 1987, (1982))
+DoniachSunjicGauss      DoniachSunjicGauss function Doniach Sunjic
+                        function multiplied for a Gaussian broadening
+DoniachSunjicGaussTail
+                        DoniachSunjicGauss function Doniach Sunjic
+                        function multiplied for a Gaussian broadening
+                        corrected for an exponential decay on the low
+                        BE side
+DoniachSunjicTail       DoniachSunjic function Version of the
+                        Doniach-Sunjic function (see Wertheim PRB
+                        25(3), 1987, (1982)) Corrected for an
+                        exponential decay (tail) on the low BE side
+ExpDecay                Eponential decay function
+Gauss                   Gauss function
+GaussLorentzProd        GaussLorentzProd function
+GaussLorentzSum         GaussLorentzSum function
+GetHvalue               In interactive graphic panels the ordinate of
+                        the cursor positin is used to compute the
+                        intensity of the selected fit function to add
+                        or to move. see analysis or Move Component
+                        options.
+LPShirley               LinearPolynomial * Shirley Baseline see
+                        Practical Surface Analysis Briggs and Seah
+                        Wiley Ed.
+Linear                  linear function
+Lorentz                 Lorentz function
+MakeTable               Font=GCourierNew is the CourierNew modified
+                        with symbols for drawing tab borders. Provides
+                        commands to print borders and cell text
+                        alignment (left, center, right) Borders are
+                        made using ascii characters
+PowerDecay              Power decay function
+ProcessCoreLine         Add a CoreLine (with fit if existing)to an
+                        XPS-Sample, or just BaseLine and Fit or remove
+                        a Coreline from a XPS-Sample
+Sech2                   Sech2 function
+Shirley2P               Two parameter Bs, Cs expressely evaluated for
+                        the Shirley background Shirley Cross Section
+                        described by: B*T/(C + T^2) T=energy loss see
+                        J. Vegh, Surface Science 563 (2004) 183, J.
+                        Vegh J.Electr.Spect.Rel.Phen. 151 (2006) 159
+Shirley3P               Three parameters Bs=30eV^2, Cs=750eV^2, Ds=0.75
+                        are expressely evaluated for the Shirley
+                        background Shirley Cross Section described by:
+                        B*T/(C + T^2)*(1-exp(-Ds*T)) T=energy loss see
+                        J. Vegh J.Electr.Spect.Rel.Phen. 151 (2006) 159
+Sigmoid                 Sigmoid function
+SimplfiedDoniachSunjic
+                        SimplfiedDoniachSunjic function see
+                        http://www.casaxps.com/help_manual/line_shapes.htm
+Tougaard2P              Two parameter B, C Tougaard background
+                        Universal Cross Section described by: B*T/(C +
+                        T^2)^2 T=energy loss see S. Tougaard, Surf.
+                        Sci. (1989), 216, 343; S. Tougaard, Sol. Stat.
+                        Comm.(1987), 61(9), 547
+Tougaard3P              Three parameter B, C and D Tougaard background
+                        Universal Cross Section described by: B*T/[(C +
+                        T^2)^2 + D*T^2] T=energy loss see S. Hajati,
+                        Surf. Sci. (2006), 600, 3015
+Tougaard4P              Four parameters B, C, C' and D Tougaard
+                        background Universal Cross Section described
+                        by: B*T/[(C + C'*T^2)^2 + D*T^2] T=energy loss
+                        see R. Hesse et al., Surf. Interface Anal.
+                        (2011), 43, 1514
+Voigt                   Voigt function
+XPSAgreement            Agreement to use the RxpsG package
+XPSAnnotate             Annotate: graphic function to add text to plots
+XPSConstraints          GUI to add a fit constraints to the fitting
+                        functions of a XPSCoreLine
+XPSCoreLine-class       Class "XPSCoreLine"
+XPSCoreLineList         Make the list of CoreLines of the loaded
+                        XPS-Sample
+XPSCustomPlot           Function to make personalized plot
+XPSElemTab              CoreLine and Auger Transition tables
+XPSEshift               XPSEShift function utility
+XPSExportAscii          GUI for the selection of the more convenient
+                        style to export all the XPSCoreLine in a
+                        XPSSample in anASCII text file.
+XPSFNameList            Provide a list of the XPS-Sample names loaded
+XPSFilter               Smoothing functions to remove noise from
+                        spectra.
+XPSFitInfo              Provides information about a Core Line fit
+XPSFitParam             XPSFitParam Gui to set fit param MaXiTERATION,
+                        TOLERANCE, MINFACTOR, when NLSfit error occurs
+XPSFitParamInfo         Provides the list of components and the
+                        relative fitting parameters
+XPSLattAnnotate         Adds text to a plot produced using the Lattice
+                        package This function is called by
+                        ('XPSOverlay') and ('XPSCustomPlot')
+XPSModFit               Perform the fit of a Core Line
+XPSMoveBaseLine         Modifies the BaseLine level and limits of a
+                        given Coreline
+XPSMoveComp             Function to modify component position and
+                        intensity in a fit
+XPSOverlay              Performs overlay of XPS-Spectra
+XPSPreferences          To select a dimensions of the graphic window
+                        depending on the dimensions of the screen used
+XPSQuant                Perform the elemental quantification for a
+                        selected XPS-Sample
+XPSReport               Provides information about a Core Line fit
+XPSResetAnalysis        Resets a XPS-Coreline processing
+XPSSample-class         Class "XPSSample"
+XPSSampleInfo           XPSSampleInfo to show/modify XPSSample INFOs is
+                        saved during acquisition
+XPSSaveData             To Save data in the Hard Disk
+XPSSetCoreLine          To select a Core Line
+XPSSetFNameCLine        To select a XPS-Sample and a Core Line
+XPSSetGraphDev          To select the kind of graphic device compatible
+                        with the operating system in use
+XPSSetWinSize           To select a dimensions of the graphic window
+                        depending on the dimensions of the screen used
+XPSSpectList            Show the list of spctra related to an XPSSample
+                        identified by its Spectral ID
+XPSSpectNameChange      To change the name of a XPS-Coreline
+XPSSplit                To select split multiple acquisitions performed
+                        with the ScientaGammadata instrument
+XPSSprucingGUI          Sprucing XPSSample datas
+XPSSurveyElementIdentify
+                        Identify Elements on the Survey
+XPSTwoScalePlot         Performs plots overlapping two different object
+                        with different Y scales
+XPSVBTop                GUI to estimate the position of the Valence
+                        Band Top
+XPSVmsCorr              Corrects XPSSample Vamas_type data for the
+                        analyzer transmission
+XPSZoomCur              To zoom a plotted spectrum
+XPSaddFitComponent      Add a fit component to the XPSCoreLine
+XPSapplyshift           Apply Shift to the XPSCoreLine
+XPSapplyshift,XPSSample-method
+                        Apply Shift to the XPSSample
+XPSbaseline             Baseline definition for XPSCoreLine object.
+XPScalc                 Function to compute the integral intensity for
+                        a given XPS-CoreLine.
+XPSconstrain            XPSConstrain function to set fit constraints
+XPSextractGUI           Extract a portion from a XPSCoreLine
+XPSfitAlgorithms        Fit algorithms
+XPSovEngine             XPSOverlay Engine: is the software powering the
+                        XPSOverlayGUI.
+XPSprocess              GUI to analyze XPS-Corelines
+XPSread                 Read '.pxt' and '.vms' format Data
+XPSremove               Remove any kind of processing from XPSCoreLine
+XPSsetRSF               Set the RSF value for XPSCoreLine
+XPSsetRegionToFit       Set Region to Fit
+[,XPSSample-method      Get subset of XPSSample
+asList                  asList
+baseline.spline         Spline Baseline
+c,XPSSample-method      Combine two XPSSample
+fitComponents-class     Class "fitComponents"
+getElementValue         Elements functions utility
+getMaxOfComponents      Get Max of Components
+hasBoundaries           Evaluate slot in XPSCoreLine
+import.ascii            XPS import.ascii GUI
+nlsModel                function to perform the Lev. Marq. peak fitting
+plot                    Plot method for XPSCoreLine or XPSSample
+                        objects
+printCell               Borders are made using ascii characters - and |
+read.scienta            read.scienta
+read.scientaAnal        read.scienta
+read.vamas              read.vamas
+readGenplot             read.vamas
+show,XPSCoreLine-method
+                        Show
+show,XPSSample-method   Show
+showListParam           Perform the fit of a Core Line
+showTableElement        Elements functions utility
+sortComponents          Sort Components
+xps                     Main GUI of XPS-Analysis

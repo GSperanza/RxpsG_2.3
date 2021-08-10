@@ -1,0 +1,90 @@
+NEWS file for package RxpsG
+Exploratory and Processing for XPS Spectra
+Giorgio Speranza
+
+##### Version Rxps version 0.6.0
+>> integrates the RxpsG using the sme name Rxps to avoid discrepancies between old and new analyzed data (graph settings)
+>> integrates the Rxps0.5.5 with modified XPSprocessing.R, with additional functions for analysis, plot, annotate
+
+
+##### Version 0.5.5
+>> Add : XPSoverlayPlot now has the capability to switch from line to point and many combination of them.
+>> Change: move the code 'plot' with mode="ov" into the XPSoverlayPlot function. Now 'plot' for XPSSample
+	does only plot as panel.
+>> New : XPSoverlayPlot function.
+
+##### Version 0.5.3
+>> Add: XPSGUI - require(tkrplot) + require(gWidgets2) + require(gWidgets2tcltk)
+	This GUI include almost all manipulation for a XPSSample: baseline, components (add/delete and move), shift, display fit summary and quantification table.
+>> Add: XPSexctractGUI - GUI for exctract a portion of a XPSCoreLine (typically "survey")
+>> TODO: GUIs for exportASCII, RSF table, overlayPlot
+
+##### Version 0.5.2
+>> Change: transition package from rpanel to gWidgets2 packages
+
+##### Version 0.5.1
+>> Fix: XPSapplyshift now works as expected
+>> Add: plot overlay now has alignment flag for core lines without baseline. 
+>> Add: GUI for shift, addCoreLines and fit.
+
+##### Version 0.5
+>> Fix: plot for XPSSample did not overlay with vamas type.
+>> Add: normalize intensity in plot for XPSSample 
+
+##### Version 0.4.2
+>> Add: quantification for Vamas files
+>> Add: Access to reference file for Kratos instrument
+>> Change: rewrite of all function to access the reference file for the two instruments (scienta, kratos)
+>> Fixed : 'plot' for XPSCoreLine did not set the xlimit wider than range of x
+>> Change: XPSquantify now print the sum of the concentration for each element
+>> Change: Ycomponent and add it to fitComponent class
+>> Change: lots of small fix to better code
+##### Version 0.4.1
+>> Change: small changes in XPSrecepies. Now they call the new XPSbaselineGUI interface
+>> Add: Flags to manage RSF for Scienta and Kratos instruments.
+>> New: XPSextract function to extract a portion from a core line trough GUI. 
+>> New: XPSbaselineGUI function to add baseline with graphical interface.
+>> Change: XPSbaseline does not plot anymore the results. Use the GUI version instead !!
+>> Change: XPSquantify now has a variable to exclude any core line from quantification even if the baseline and/or fit are present
+>> Fixed : shirley reverse when higher bgnd is at lower BE
+>> Change: options for XPSremove are now lowercase and default option is "all"
+>> Add   : XPSexportASCII to export data
+
+##### Version 0.4
+>> Fixed: bug in the XPSconstrain (and consequently in XPSfit) that it does not manage more than 1 link.
+>> Add: to the definition of fitComponent the slot rsf. In this way any component has it's rsf.
+>> Change : XPSsetRSF now sets the rsf only for the XPSCoreLine RSF slot and that is used in the case of quantification only trough the baseline definition.
+>> Change: the XPSbaseline calls the XPSsetRSF and XPSaddFitComponent sets the rsf for each component.
+>> Fix: many small "typo" mistakes.
+
+##### Version 0.3
+>> Add: the baseline slot has an item with the baseline class object in it
+>> Change: now the baseline action is managed trough the 'baseline' package
+>> Add: XPSresidualPlot function, mainly called after success with fit.
+>> Add: readGenplot to manage RPL file for Genplot already processed files
+>> Change: a lot of adjustments on the fit function definitions and start values. now everythings seems OK.
+>> Add: XPSconstrain function does manage constrain
+>> Add: avoid baseline add names to y coordinate
+>> Add: function to manage param values into class fitComponent
+>> Change: added a new class for fitComponent and change all code to include the new class
+>> Change: the fit slot (@Fit) now has a $y item to be compatible with GENPLOT replot old files that have component but the fit is not exported.
+
+##### Version 0.2
+>> Change: the original data (Kinetic or Binding or Transmission or ... and Counts or Cps) are in the .Data slot but are transformed to Binding and cps for quantitative analysis. 
+>> Change: the definition of XPSCoreLine
+
+
+##### Version 0.1
+Date: 2012-05-13
+>> ## ADD: funzioni per cancellare Componenti, fit, baseline, regiontofit da linea di core e dal campione.
+	
+>> ## ADD: una funzione per creare una CoreLine dal survey ed includerla nel XPSsample. OK!
+
+>> ## ADD: funzione che calcoli le y per le funzioni di fit e restituisca un dataframe o lista
+	
+>> ## ADD: assegnare una label (sequenza numerica oppure stringa) per le componenti di un fit OK!
+
+##### Version: 0.0
+Date: 2012-05-13
+News: Start Release
+>> Assembly of all functions already have.
